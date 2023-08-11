@@ -5,7 +5,7 @@ This repository contains Python code examples that demonstrate linear regression
 ## Implementation 1: Basic Gradient Descent
 
 ### Overview
-The first code example (`basic_gradient_descent.py`) demonstrates linear regression using basic gradient descent. It generates random input data, initializes weight and bias, and then performs gradient descent to optimize these parameters.
+The first code example (`Gradient_descent.py`) demonstrates linear regression using basic gradient descent. It generates random input data, initializes weight and bias, and then performs gradient descent to optimize these parameters.
 
 ### Features
 - Random input data generation.
@@ -16,13 +16,13 @@ The first code example (`basic_gradient_descent.py`) demonstrates linear regress
 ### Usage
 To run the code:
 ```
-python gradient_descent.py
+python Gradient_descent.py
 ```
 
 ## Implementation 2: Vectorized Gradient Descent
 
 ### Overview
-The second code example (`vectorized_gradient_descent.py`) showcases linear regression using vectorized gradient descent. It follows the same process as the first example but utilizes NumPy's vectorized operations for improved efficiency.
+The second code example (`Vectorized_gradient_descent.py`) showcases linear regression using vectorized gradient descent. It follows the same process as the first example but utilizes NumPy's vectorized operations for improved efficiency.
 
 ### Features
 - Random input data generation.
@@ -34,7 +34,7 @@ The second code example (`vectorized_gradient_descent.py`) showcases linear regr
 ### Usage
 To run the code:
 ```
-python vectorized_gradient_descent.py
+python Vectorized_gradient_descent.py
 ```
 
 ## Conclusion
