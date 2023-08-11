@@ -1,30 +1,45 @@
-Certainly, here's a simple README file to explain the purpose and usage of the provided code:
+# Linear Regression with Gradient Descent
+
+This repository contains Python code examples that demonstrate linear regression using gradient descent. Two different implementations are provided, each showcasing a different approach to achieve the same goal.
+
+## Implementation 1: Basic Gradient Descent
+
+### Overview
+The first code example (`basic_gradient_descent.py`) demonstrates linear regression using basic gradient descent. It generates random input data, initializes weight and bias, and then performs gradient descent to optimize these parameters.
+
+### Features
+- Random input data generation.
+- Manual calculation of gradient and parameter updates.
+- Training loop for a specified number of epochs.
+- Printing of epoch information and parameter values.
+
+### Usage
+To run the code:
+```
+python gradient_descent.py
+```
+
+## Implementation 2: Vectorized Gradient Descent
+
+### Overview
+The second code example (`vectorized_gradient_descent.py`) showcases linear regression using vectorized gradient descent. It follows the same process as the first example but utilizes NumPy's vectorized operations for improved efficiency.
+
+### Features
+- Random input data generation.
+- Vectorized gradient computation and parameter updates.
+- Training loop for a specified number of epochs.
+- Modularized functions for prediction and loss calculation.
+- Printing of epoch information and parameter values.
+
+### Usage
+To run the code:
+```
+python vectorized_gradient_descent.py
+```
+
+## Conclusion
+Both implementations demonstrate the fundamental concept of linear regression using gradient descent. The second implementation leverages NumPy's vectorized operations for improved performance, making it a more efficient and concise solution.
+
+Feel free to explore and compare the two implementations to gain insights into different coding approaches for the same machine learning task.
 
 ---
-
-# Gradient Descent
-
-This code demonstrates a basic implementation of gradient descent to fit a linear model to random input and target data. It uses the NumPy library for numerical operations.
-
-## Purpose
-
-The purpose of this code is to showcase how gradient descent can be used to iteratively optimize the parameters of a linear model to minimize the mean squared error loss between the predicted and target values.
-
-## Usage
-
-1. Ensure you have Python and NumPy installed on your system.
-2. Copy and paste the provided code into a Python file (e.g., `gradient_descent.py`).
-3. Run the script. It will perform the following steps:
-   - Generate random input and target data.
-   - Initialize the weight and bias of the linear model.
-   - Apply the gradient descent algorithm to update the model parameters.
-   - Print the loss and model parameters for each training epoch.
-
-## Code Explanation
-
-- The `input_data` is randomly generated with a shape of (10, 1).
-- The `target_data` is created by adding random noise to the linear relationship `2 * input_data`.
-- The `gradient_descent` function calculates the gradients of the loss with respect to the model parameters (weight and bias) and updates them.
-- The training loop iterates over 400 epochs and performs the gradient descent step in each epoch.
-- The model's predictions are calculated using the updated parameters.
-- The mean squared error loss is calculated to assess the model's performance.
